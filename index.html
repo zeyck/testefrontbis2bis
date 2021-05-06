@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Teste Bis2Bis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="topo" id="nav">
+
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="funcaodomenu()">&#9776;</a>
+
+            <a href="#">
+                <img src="images/b2b.png" width="135px" />
+            </a>
+
+            <div class="dropdown">
+
+                <button class="dropbtn">Produtos 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="#">Decor lisos</a>
+                    <a href="#">Decor estampados</a>
+                    <a href="#">Confecção</a>
+                    <a href="#">Fios</a>
+                    <a href="#">Sacarias</a>
+                </div>
+
+            </div>
+
+            <div class="topo-right">
+
+                <a href="#"><i class="fa fa-search"></i></a>
+                <a href="#"><i class="fa fa-user"></i></a>
+
+                <div class="dropdown">
+
+                    <button class="dropbtn">
+                        <i class="fa fa-shopping-cart"></i>
+                    </button>
+
+                    <div id="notify">
+                        <span class="dot" id="red">
+                            <p id="ncarrinho"></p>
+                        </span>
+                    </div>
+
+                    <div class="dropdown-content">
+                        <a id="lista">Carrinho vazio</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="Slides fade s-none">
+            <img src="images/flower.jpg">
+        </div>
+
+        <div class="Slides fade s-none">
+            <img src="images/sun-clouds.jpg">
+        </div>
+
+        <div class="Slides fade">
+            <img src="images/tree.jpg">
+        </div>
+
+
+    </div>
+
+    <div class="dotcentro">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="cinzacont">
+
+        <div class="row ">
+
+            <div class="column ">
+                <div class="card ">
+
+                    <img src="images/seguranca.jpg">
+                    <h4>Segurança</h4>
+                    <p>seguro como no presencial</p>
+
+                </div>
+            </div>
+
+            <div class="column ">
+                <div class="card ">
+
+                    <img src="images/card.jpg">
+                    <h4>Parcele</h4>
+                    <p>suas compras em até 6x</p>
+
+                </div>
+            </div>
+
+            <div class="column ">
+                <div class="card ">
+
+                    <img src="images/box.jpg">
+                    <h4>Frete grátis*</h4>
+                    <p>a partir de R$299</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+
+        <div class="row ">
+
+            <div class="modelos ">
+
+                <div class="column ">
+                    <div class="card addicon">
+
+                        <img class="addshow " src="images/sun-clouds.jpg ">
+                        <i class="fa fa-plus-circle fa-3x"></i>
+                        <p class="legendamodelos ">Decor lisos</p>
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card addicon">
+
+                        <img class="addshow " src="images/sun-clouds.jpg ">
+                        <i class="fa fa-plus-circle fa-3x"></i>
+                        <p class="legendamodelos ">Decor estampados</p>
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card addicon">
+
+                        <img class="addshow " src="images/sun-clouds.jpg ">
+                        <i class="fa fa-plus-circle fa-3x"></i>
+                        <p class="legendamodelos ">Confecções</p>
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card addicon">
+
+                        <img class="addshow " src="images/sun-clouds.jpg ">
+                        <i class="fa fa-plus-circle fa-3x"></i>
+                        <p class="legendamodelos ">Fios</p>
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card addicon">
+
+                        <img class="addshow " src="images/sun-clouds.jpg ">
+                        <i class="fa fa-plus-circle fa-3x"></i>
+                        <p class="legendamodelos ">Sacarias</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="produtos">
+
+        <p class="titulos"><strong>Produtos</strong> em destaque</p>
+        <div class="main">
+
+            <div class="slider slider-nav">
+
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$28.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$54.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$23.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$29.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$87.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cardcinza">
+
+        <p><strong>Nossas</strong> coleções</p>
+
+        <div class="navunderline">
+            <a class="linkscol" onmouseover="colecoes(event, 'lisos')">Decor lisos</a>
+            <a class="linkscol" onmouseover="colecoes(event, 'estampados')">Decor estampados</a>
+            <a class="linkscol" onmouseover="colecoes(event, 'confeccoes')">Confecções</a>
+            <a class="linkscol" onmouseover="colecoes(event, 'fios')">Fios</a>
+            <a class="linkscol" onmouseover="colecoes(event, 'sacarias')">Sacarias</a>
+        </div>
+
+        <div class="row tpcolecoes">
+
+            <div class="column ">
+                <div id="lisos" class="cardcolecoes">
+
+                    <img src="images/flower.jpg ">
+
+                </div>
+            </div>
+
+            <div class="column ">
+                <div id="estampados" class="cardcolecoes">
+
+                    <img src="images/sun-clouds.jpg ">
+
+                </div>
+            </div>
+
+            <div class="column ">
+                <div id="confeccoes" class="cardcolecoes">
+
+                    <img src="images/tree.jpg ">
+
+                </div>
+            </div>
+
+            <div class="column ">
+                <div id="fios" class="cardcolecoes">
+
+                    <img src="images/flower.jpg ">
+
+                </div>
+            </div>
+
+            <div class="column ">
+                <div id="sacarias" class="cardcolecoes">
+
+                    <img src="images/sun-clouds.jpg ">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dotmodelo">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </div>
+
+    <div class="produtos">
+
+        <p class="titulos"><strong>Mais </strong>vendidos</p>
+
+        <div class="main">
+            <div class="slider slider-for">
+
+            </div>
+            <div class="slider slider-nav">
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$99.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$79.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$44.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$75.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="cardprodutos">
+                        <img src="images/flower.jpg">
+                        <h4 class="tittleproduto">Olimpo plus easy c - 6012-002</h4>
+                        <p>Texto sobre o produto..</p>
+                        <p class="preco">R$29.90</p>
+                        <button class="btcomprar">
+                        <i class="fa fa-shopping-cart"></i>
+                        Comprar</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="rodape">
+
+            <img class="instagram" src="images/flower.jpg">
+            <br>
+            <div id="inst">
+                <i class="fa fa-instagram fa-3x"><p>@bis2bis</p></i>
+            </div>
+
+            <div class="row">
+
+                <div class="column ">
+                    <div class="card ">
+
+                        <img class="logo2" src="images/logo2.jpg">
+
+                    </div>
+                </div>
+
+
+                <div class="column ">
+                    <div class="card ">
+
+                        <a href="#">Termos e condições</a>
+                        <a href="#">Trocas e devoluções</a>
+                        <a href="#">Politica de privacidade</a>
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+
+                        <a href="#">Como funciona</a>
+                        <a href="#">Perguntas frequentes</a>
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card ">
+
+                        <a href="#">Institucional</a>
+                        <a href="#">Contato</a>
+
+                    </div>
+                </div>
+
+                <div class="column ">
+                    <div class="card">
+
+                        <a class="numero">0800 771 7070</a>
+                        <a href="#">sac@bis2bis.com.br</a>
+                        <i class="fa fa-facebook-official fa-2x"></i>
+                        <i class="fa fa-instagram fa-2x"></i>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p id="ltda">Bis2BisE-commerce Ltda.-CNPJ:00.000.000/0001-01 Todos os direitos reservados 2020</p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+
+</body>
+
+</html>
