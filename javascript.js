@@ -69,13 +69,13 @@ function colecoes(evt, tipos) {
     var i, cardcolecoes, linkscol;
     cardcolecoes = document.getElementsByClassName("cardcolecoes");
     for (i = 0; i < cardcolecoes.length; i++) {
-        cardcolecoes[i].style.display = "none";
+        cardcolecoes[i].style.opacity = "0.3";
     }
     linkscol = document.getElementsByClassName("linkscol");
     for (i = 0; i < linkscol.length; i++) {
         linkscol[i].className = linkscol[i].className.replace(" active", "");
     }
-    document.getElementById(tipos).style.display = "block";
+    document.getElementById(tipos).style.opacity = "1";
     evt.currentTarget.className += " active";
 }
 
@@ -92,3 +92,26 @@ $(document).ready(function() {
         }
     });
 });
+
+// bloco modelos mobile
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+    var x = document.getElementsByClassName("mobadd");
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mobadd");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+}
+
+// cardcinza

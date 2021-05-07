@@ -2,6 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .s-none {
@@ -205,7 +206,7 @@ body {
 /* modelos */
 
 .modelos {
-    margin: 35px 0 6px 190px;
+    margin: 35px 0 87px 184px;
 }
 
 .modelos img {
@@ -229,7 +230,16 @@ body {
 
 .legendamodelos {
     text-align: center;
-    margin: -40px 4px 35px;
+    margin: -37px;
+}
+
+.next,
+.prev {
+    display: none;
+}
+
+.mob {
+    display: none;
 }
 
 
@@ -311,6 +321,7 @@ body {
     background-color: darkgrey;
     text-align: center;
     margin: 25px 0 25px 0;
+    padding: 10px;
 }
 
 .cardcinza p {
@@ -346,8 +357,33 @@ body {
     height: auto;
 }
 
-.dotmodelo {
-    margin-top: 35px;
+.legendaicon {
+    transform: translate(20px, -97px);
+    display: flex;
+    color: rgb(168, 53, 53);
+    flex-direction: column;
+}
+
+.legendaicon .overlay {
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 86%;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    transform: translate(6px, 6px);
+    border-radius: 5px;
+}
+
+.legendaicon i {
+    opacity: 0;
+}
+
+.legendaicon:hover .overlay,
+.legendaicon:hover i {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 
@@ -380,6 +416,7 @@ body {
 
 .rodape {
     background-color: rgb(35 34 34);
+    font-size: 14px;
 }
 
 .rodape a {
@@ -391,7 +428,7 @@ body {
 
 .numero {
     color: rgb(235, 60, 60) !important;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .rodape .logo2 {
@@ -425,6 +462,10 @@ hr {
     border-color: rgb(20, 20, 20);
 }
 
+.rodape .column:nth-last-child(2) {
+    width: 12%;
+}
+
 
 /* Responsivo navbar*/
 
@@ -436,6 +477,13 @@ hr {
     .topo-right {
         float: left;
         display: block;
+    }
+    .topo-right .dropdown {
+        float: none;
+        transform: translate(164px, -55px);
+    }
+    .dropdown .firstdrop {
+        display: none;
     }
     .topo a.icon:not(:last-child) {
         float: left;
@@ -458,6 +506,9 @@ hr {
     .topo.responsive .dropdown {
         float: none;
     }
+    .topo.responsive .topo-right .dropdown {
+        transform: translate(150px, -200px);
+    }
     .topo.responsive .dropdown-content {
         position: relative;
     }
@@ -474,10 +525,53 @@ hr {
     .cinzacont {
         display: none;
     }
+    .next,
+    .prev {
+        display: flex;
+        height: 30px;
+        width: 30px;
+        border: 3px rgb(202, 190, 190);
+    }
+    .next {
+        float: right;
+        transform: translate(-4px, -214px);
+    }
+    .prev {
+        float: left;
+        transform: translate(6px, -212px);
+    }
+    .next i,
+    .prev i {
+        transform: translate(8px, 9px);
+    }
+    .modelos {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+    .mob img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 30px;
+    }
+    .legendamodelos {
+        margin: -23px 100px 48px;
+        transform: translate(40px, 7px);
+    }
     .main {
         width: 250px;
         display: block;
         margin: 0 auto;
+    }
+    .cardcolecoes img {
+        display: flex;
+        width: 95%;
+    }
+    .legendaicon .overlay,
+    .legendaicon i {
+        display: none;
     }
     .rodape img,
     #inst {
@@ -487,6 +581,7 @@ hr {
         display: block !important;
         width: 85px;
         height: 81px;
+        margin: 3px 0 12px 39px;
     }
     .rodape .row {
         margin: 0 0 37px;
@@ -496,6 +591,7 @@ hr {
     }
     .rodape .column {
         width: 68%;
+        margin: 4px 0 0 81px;
     }
     .rodape #ltda {
         margin: 0 56px;
